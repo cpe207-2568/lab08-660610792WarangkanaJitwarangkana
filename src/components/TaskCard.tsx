@@ -4,11 +4,13 @@ import type { TaskCardProps } from '../libs/types'; // Import as a type
 // Task Card Component
 const TaskCard: React.FC<TaskCardProps> = ({ id, title, description, isDone }) => {
   const handleDoneClick = () => {
-    console.log(`Task with ID ${id} is marked as done.`);
+    // This console.log line ensures the 'id' and 'isDone' props are used.
+    console.log(`Task with ID ${id} has 'Done' clicked. Current status: ${isDone}`);
   };
 
   const handleDeleteClick = () => {
-    console.log(`Task with ID ${id} is deleted.`);
+    // This console.log line ensures the 'id' prop is used.
+    console.log(`Task with ID ${id} has 'Delete' clicked.`);
   };
 
   return (
