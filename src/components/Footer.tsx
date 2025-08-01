@@ -11,3 +11,5 @@ const Footer: React.FC<FooterProps> = ({ year, fullName, studentId }) => {
 };
 
 export default Footer;
+
+//warangkana
